@@ -1,0 +1,94 @@
+body{
+    background-color:#F7ECDE;
+}
+i{
+    padding-inline:5px ;
+}
+h1{
+    text-align: center;
+     font-family: "Pacifico", cursive;
+     border-bottom: dotted black 2px;
+     padding-bottom: 50px;
+     padding-top: 50px;
+    position: relative;
+
+}
+.btn-visit{
+    background-color: #8A9E23;
+    color: white;
+}
+h1::before{
+    content: "Bookmarker";
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: linear-gradient(to bottom,transparent 60%  ,#FEC260 );
+    transform: translate(-50% ,-50%);
+    -webkit-transform: translate(-50% ,-50%);
+    -moz-transform: translate(-50% ,-50%);
+    -ms-transform: translate(-50% ,-50%);
+    -o-transform: translate(-50% ,-50%);
+}
+h1::after{
+    content: "";
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to bottom ,transparent 20% ,#FEC260 20%  ,transparent  );
+    transform: translate(-50% ,-50%);
+    -webkit-transform: translate(-50% ,-50%);
+    -moz-transform: translate(-50% ,-50%);
+    -ms-transform: translate(-50% ,-50%);
+    -o-transform: translate(-50% ,-50%);
+    opacity: 0;
+    z-index: 5;
+    transition: all .3s ;
+    -webkit-transition: all .3s ;
+    -moz-transition: all .3s ;
+    -ms-transition: all .3s ;
+    -o-transition: all .3s ;
+}
+h1::before h1::after{
+opacity: 1;
+}
+.heading{
+        text-align: center;
+          font-family: "Righteous", sans-serif;
+
+
+}
+.heading i{
+     font-size: 25px;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-inline: 10px;
+}
+
+h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+label p{
+    padding-top: 15px;
+      font-family: "PT Sans Caption", sans-serif;
+
+}
+.button{
+      border-bottom: dotted black 2px;
+    padding-bottom: 40px;
+}
+.button .btn{
+    padding-inline: 40px;
+    background-color: #D1512D;
+}
+.button .btn:hover{
+     background-color: rgb(187, 71, 39);
+   
+}

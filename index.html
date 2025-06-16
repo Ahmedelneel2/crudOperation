@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Bookmark</title>
+    <!-- ! fontawesome link  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Boot strab  -->
+     <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <!-- style sheet -->
+      <link rel="stylesheet" href="./css/style.css">
+<!--*** google fonts  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container d-flex flex-column   col">
+       <div>
+         <h1></h1>
+        <h2 class="heading d-flex justify-content-center     ">
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites 
+            <i class="fa-solid fa-bookmark"></i>
+        </h2>
+        <label class="d-flex align-items-center  ">
+            <i class=" fa-solid fa-book-bookmark"></i>
+            <p > Site Name</p>
+        </label>  
+        <input id="name" class="form-control" placeholder="Bookmark Name"type="text">
+        <h5 id="SameName" class="bg-warning d-none">  there is a Bookmark with the same name        </h5>
+        
+         <label class=" d-flex align-items-center  ">
+            <i class="fa-solid fa-link"></i>
+            <p class=""> Site URL</p>
+        </label> 
+         
+       <input id="url" class="form-control" placeholder="Website URL" type="text">
+        <br>
+        <h5 id="warning" class="bg-warning d-none">  - Name of URl must be at least 3 charachter <br>
+                                 - url must be as (www.google.com or https//www.google.com)
+        </h5>
+          <h5 id="samename" class="bg-warning d-none">  there is a Bookmark with the same name
+        </h5>
+        <div class="  button d-flex justify-content-center">
+                    <button onclick="
+                        addBookMark()" class="  btn btn-danger">Sumbit</button>
+
+        </div>
+       </div>
+    </div>
+    
+    <div class="table mt-3 container">
+        <table class="table bg-light text-center">
+           <thead>
+             <tr>
+                <th>index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </tr>
+           </thead>
+            <tbody id="dispaly">
+            </tbody>
+        </table>
+    </div>
+<!-- Bootstrap Js  -->
+    <script src="./js/bootstrap.min.js"></script>
+<!-- external file of js      -->
+ <script src="./js/javascript.js"></script>
+</body>
+</html>
